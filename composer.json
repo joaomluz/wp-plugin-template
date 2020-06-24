@@ -1,0 +1,30 @@
+{
+    "name": "joaomluz/wp-plugin-template",
+    "type": "project",
+    "description": "WordPress Simple Plugin Example",
+    "version": "1.0.0",
+    "authors": [
+        {
+             "name": "João Luz",
+             "homepage": "https://github.com/joaomluz",
+             "role": "Developer"
+        }
+    ],
+    "license": "LICENSE-2.0",
+    "minimum-stability": "dev",
+    "keywords": [ "wordpress", "plugin", "template" ],
+    "autoload": {
+        "psr-4": {
+            "SimplePlugin\\": "simple-plugin-src/src/"
+        },
+        "files": [
+            "simple-plugin-src/src/functions.php"
+        ]
+    },
+    "config": {
+        "vendor-dir": "simple-plugin-src/vendor/"
+    },
+    "require": {
+        "php": "^7.2"
+    }
+}
